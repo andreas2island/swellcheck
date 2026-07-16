@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SwellCheck — know before you go</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#04141B; color:#F4FAF7; font-family:system-ui, sans-serif; }
+
+  .hero { position:relative; min-height:88vh; overflow:hidden;
+          display:flex; flex-direction:column; justify-content:center; align-items:center;
+          text-align:center; padding:40px 20px 120px 20px; }
+  #ocean { position:absolute; inset:0; width:100%; height:100%; }
+  .hero > * { position:relative; }
+  .eyebrow { font-size:12px; letter-spacing:5px; font-weight:bold; color:#7FD8BE; }
+  h1 { font-family:'Righteous', sans-serif; font-weight:400; font-size:clamp(48px, 11vw, 92px);
+       letter-spacing:2px; text-shadow:0 4px 0 rgba(0,0,0,0.3); margin-top:6px; }
+  h1 .tilde { color:#FFB55F; }
+  .tagline { font-size:16px; color:#9FD4C6; font-style:italic; margin-top:4px; }
+  .dl { display:inline-block; margin-top:34px; font-family:'Righteous', sans-serif;
+        font-size:20px; letter-spacing:2px; color:#fff; text-decoration:none;
+        padding:18px 42px; border-radius:99px;
+        background:linear-gradient(90deg, #FF6B4A, #FF8A3D);
+        box-shadow:0 10px 30px rgba(255,107,74,0.45); }
+  .dl:active { transform:translateY(1px); }
+  .dlnote { margin-top:12px; font-size:12px; color:rgba(244,250,247,0.7); }
+  .livehint { margin-top:26px; font-size:12px; color:#7FD8BE; letter-spacing:1px; }
+
+  main { max-width:640px; margin:0 auto; padding:56px 22px 80px 22px; }
+  h2 { font-family:'Righteous', sans-serif; font-weight:400; font-size:22px;
+       letter-spacing:2px; color:#7FD8BE; margin:44px 0 18px 0; }
+  h2:first-child { margin-top:0; }
+  .step { display:flex; gap:14px; margin-bottom:16px; align-items:flex-start; }
+  .n { flex:0 0 34px; height:34px; line-height:34px; text-align:center; border-radius:50%;
+       background:#0FA3A3; color:#04141B; font-family:'Bebas Neue', sans-serif; font-size:20px; }
+  .step p { font-size:15px; line-height:1.55; color:#DCEBE6; padding-top:5px; }
+  .step p b { color:#F4FAF7; }
+  .sv { color:#9FD4C6; font-size:13px; display:block; margin-top:3px; }
+
+  .feat { font-size:15px; line-height:1.7; color:#DCEBE6; }
+  .feat b { color:#7FD8BE; }
+
+  .honest { border-left:4px solid #FFB55F; padding:12px 16px; background:rgba(255,181,95,0.08);
+            border-radius:0 12px 12px 0; font-size:14px; line-height:1.6; color:#EFE3D2; margin-top:10px; }
+
+  footer { text-align:center; font-size:12px; color:rgba(244,250,247,0.45); padding:0 20px 46px 20px; line-height:1.7; }
+  @media (prefers-reduced-motion: reduce) { #ocean { display:none; } .hero { background:linear-gradient(180deg,#04141B,#0E5560); } }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <canvas id="ocean"></canvas>
+  <div class="eyebrow">DAWN PATROL INTEL</div>
+  <h1>SWELL<span class="tilde">~</span>CHECK</h1>
+  <div class="tagline">know before you go &middot; vet innan du drar</div>
+  <a class="dl" href="./swellcheck.apk" download>&#8595;&nbsp; GET THE APP</a>
+  <div class="dlnote">Android APK &middot; free &middot; no account, no ads, no tracking</div>
+  <div class="livehint">&#9650; this ocean is the app's live header — it moves with the real forecast</div>
+</header>
+
+<main>
+  <h2>INSTALL &middot; INSTALLERA</h2>
+  <div class="step"><span class="n">1</span><p><b>Download</b> the APK with the button above.
+    <span class="sv">Ladda ner APK-filen med knappen ovan.</span></p></div>
+  <div class="step"><span class="n">2</span><p><b>Tap the file.</b> Your phone warns that it's not from Play Store — correct, it's homemade. Allow your browser to install unknown apps.
+    <span class="sv">Tryck på filen. Telefonen varnar — stämmer, den är hemmabyggd. Tillåt installation från din webbläsare.</span></p></div>
+  <div class="step"><span class="n">3</span><p>Play Protect may ask again: choose <b>More&nbsp;details → Install&nbsp;anyway</b>. Open, tap a spot, go surf.
+    <span class="sv">Play Protect kan fråga igen: välj <b>Mer information → Installera ändå</b>. Öppna, tryck på en spot, kör.</span></p></div>
+
+  <h2>WHAT IT DOES</h2>
+  <p class="feat">
+    One glance: <b>GO / MAYBE / NO</b> for your skill level, wind-and-daylight aware.
+    Hour-by-hour and 7-day charts with tide, rain, sun and water temp.
+    <b>Works offline</b> at the beach parking lot. Cross-checks <b>4 independent wave models</b>
+    and tells you when they disagree. 158 bundled spots worldwide plus live map search.
+    Your own spot photos with camera capture. <b>Svenska och English.</b>
+    Dawn-patrol dark mode. And the ocean up top? It renders the actual conditions —
+    height, period, wind chop, water colour, real sunrise light.
+  </p>
+
+  <h2>THE HONEST BIT</h2>
+  <div class="honest">
+    This is a hobby app built by a surfer, not a company. It isn't on the Play Store,
+    so Android shows scary warnings — that's normal for sideloaded apps. Forecasts come
+    from open marine models and the app always shows you how much to trust them.
+  </div>
+</main>
+
+<footer>
+  Wave data: Open-Meteo (open marine models) &middot; Spots &amp; coastlines: OpenStreetMap contributors<br>
+  Photos: Wikimedia Commons (credited in-app) &middot; Built with apktool, smali &amp; stoke
+</footer>
+
+<script>
+var O = { h: 2.2, per: 12, wind: 8, sst: 18, t0: Date.now() };
+function hexLerp(a, b, f) {
+  function c(x, i) { return parseInt(x.substr(1 + i * 2, 2), 16); }
+  function h2(n) { n = Math.round(n); var t = Math.max(0, Math.min(255, n)).toString(16); return t.length < 2 ? '0' + t : t; }
+  return '#' + h2(c(a,0)+(c(b,0)-c(a,0))*f) + h2(c(a,1)+(c(b,1)-c(a,1))*f) + h2(c(a,2)+(c(b,2)-c(a,2))*f);
+}
+function draw() {
+  var cv = document.getElementById('ocean');
+  var hero = cv.parentNode;
+  var w = hero.clientWidth, h = hero.clientHeight;
+  if (cv.width !== w || cv.height !== h) { cv.width = w; cv.height = h; }
+  var g = cv.getContext('2d');
+  var t = (Date.now() - O.t0) / 1000;
+  var hr = new Date().getHours() + new Date().getMinutes() / 60;
+  var NIGHT = ['#04141B','#0A2530'], DAY = ['#1D6E7E','#0E5560'], GOLD = ['#E8833A','#7A4A2C'];
+  var sky = (hr < 5 || hr >= 22) ? NIGHT : (hr < 7) ? [hexLerp(NIGHT[0],GOLD[0],(hr-5)/2), hexLerp(NIGHT[1],GOLD[1],(hr-5)/2)]
+          : (hr < 9) ? [hexLerp(GOLD[0],DAY[0],(hr-7)/2), hexLerp(GOLD[1],DAY[1],(hr-7)/2)]
+          : (hr < 19) ? DAY
+          : [hexLerp(DAY[0],NIGHT[0],(hr-19)/3), hexLerp(DAY[1],NIGHT[1],(hr-19)/3)];
+  var gr = g.createLinearGradient(0, 0, 0, h);
+  gr.addColorStop(0, sky[0]); gr.addColorStop(1, sky[1]);
+  g.fillStyle = gr; g.fillRect(0, 0, w, h);
+  var base = '#0FA3A3';
+  var amp = 5 + O.h * 3.2, speed = 5.5 / O.per, wlen = 90 + O.per * 14;
+  var layers = [
+    { y: h - 120, f: 0.5, sp: 0.6, col: hexLerp(base, '#04141B', 0.45) },
+    { y: h - 80,  f: 0.75, sp: 0.85, col: hexLerp(base, '#04141B', 0.2) },
+    { y: h - 42,  f: 1.0, sp: 1.15, col: base }
+  ];
+  for (var L = 0; L < 3; L++) {
+    var ly = layers[L];
+    var k = 6.2832 / (wlen * (1 + L * 0.25)), wv = 6.2832 * speed * ly.sp;
+    g.fillStyle = ly.col;
+    g.beginPath(); g.moveTo(0, h);
+    for (var x = 0; x <= w; x += 6) {
+      var y = ly.y - amp * ly.f * Math.sin(k * x - wv * t + L * 1.7)
+                   - amp * ly.f * 0.35 * Math.sin(2.3 * k * x + 1.6 * wv * t + L);
+      g.lineTo(x, y);
+    }
+    g.lineTo(w, h); g.closePath(); g.fill();
+  }
+}
+function tick() { if (!document.hidden) draw(); requestAnimationFrame(tick); }
+if (!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) requestAnimationFrame(tick);
+else draw();
+</script>
+</body>
+</html>
